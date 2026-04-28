@@ -31,6 +31,14 @@ const { data:res, error } = await authClient.signIn.email({
     callbackURL: "/",
 });
 console.log(res, error);
+if(error){
+      alert(error.message)
+    }
+    if(res){
+      alert("signUp successfull")
+    }
+
+  };
 }
 
 
